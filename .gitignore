@@ -1,5 +1,7 @@
 # Build artifacts
 */out
+*/data
+*.bmp
 *.obj
 *.exe
 *.com
