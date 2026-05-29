@@ -70,7 +70,7 @@ void solve_by_chords(double a, double b, size_t max_iters)
             "fstsw ax\n\t"
             "sahf\n\t"
             "fstp st(0)\n\t"
-            "jnb 2f\n\t"
+            "jb 2f\n\t"
 
             "fld qword ptr [%[pc]]\n\t"
             "fstp qword ptr [%[pb]]\n\t"
