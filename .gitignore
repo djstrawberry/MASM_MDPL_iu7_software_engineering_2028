@@ -1,10 +1,12 @@
 # Build artifacts
+*/out
 *.obj
 *.exe
 *.com
 *.OBJ
 *.EXE
 *.COM
+*.txt
 
 # Optional assembler/linker byproducts
 *.map

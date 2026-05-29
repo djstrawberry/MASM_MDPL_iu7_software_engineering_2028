@@ -72,7 +72,7 @@ static void run_asm_float_benchmarks()
 	{
 		__asm__(
 			"flds %1\n\t"
-			"flds %2\n\t"
+			"flds %0\n\t"
 			"faddp\n\t"
 			"fstps %0\n\t"
 			: "+m" (a)
@@ -89,7 +89,7 @@ static void run_asm_float_benchmarks()
 	{
 		__asm__(
 			"flds %1\n\t"
-			"flds %2\n\t"
+			"flds %0\n\t"
 			"fmulp\n\t"
 			"fstps %0\n\t"
 			: "+m" (c)
@@ -109,7 +109,7 @@ static void run_asm_double_benchmarks()
 	{
 		__asm__(
 			"fldl %1\n\t"
-			"fldl %2\n\t"
+			"fldl %0\n\t"
 			"faddp\n\t"
 			"fstpl %0\n\t"
 			: "+m" (a)
@@ -125,7 +125,7 @@ static void run_asm_double_benchmarks()
 	{
 		__asm__(
 			"fldl %1\n\t"
-			"fldl %2\n\t"
+			"fldl %0\n\t"
 			"fmulp\n\t"
 			"fstpl %0\n\t"
 			: "+m" (c)
